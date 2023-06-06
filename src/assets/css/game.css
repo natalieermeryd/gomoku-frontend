@@ -1,0 +1,46 @@
+.bar {
+    margin: 0;
+    padding: 0;
+    background-color: #3F0130;
+    position: absolute;
+}
+
+.bar.horizontal {
+    height: 2px;
+    width:  min(6vh, 6vw);
+
+}
+
+.bar.vertical {
+    width: 2px;
+    height: min(6vh, 6vw);
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.board .container {
+    padding: min(1.5vh, 1.5vw);
+    border: 2px solid black;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.game {
+    flex-direction: row;
+    padding-top: 10vh;
+}
+
+.title {
+    max-width: 40vw;
+}
+
+@media (max-width: 1023px) {
+    .game {
+        flex-direction: column;
+        padding-top: 0;
+    }
+}
